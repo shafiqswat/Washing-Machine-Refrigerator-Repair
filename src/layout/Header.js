@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "../components/form/Link";
 import { smoothScrollTo } from "@/utils/smoothScroll";
 import { MenuIcon } from "@/assets/Svg";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,15 +18,13 @@ const Header = () => {
         <div className='flex items-center justify-between h-16'>
           {/* Logo */}
           <div className='flex items-center'>
-            <div className='w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-3'>
-              <span className='text-white font-bold text-lg'>A</span>
-            </div>
-            <Link
-              href='/'
-              variant='ghost'
-              className='text-xl font-bold text-gray-900 hover:bg-transparent'>
-              AppliancePro
-            </Link>
+            <Image
+              src='/images/logo.png'
+              alt='JTE Repair Services Logo'
+              width={120}
+              height={100}
+              className='object-contain w-[120px] h-[96px] '
+            />
           </div>
 
           {/* Desktop Navigation */}

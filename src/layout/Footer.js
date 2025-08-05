@@ -2,6 +2,8 @@
 
 import React from "react";
 import Link from "../components/form/Link";
+import LeafletMapComponent from "../components/LeafletMapComponent";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -11,15 +13,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className='md:col-span-2'>
             <div className='flex items-center mb-4'>
-              <div className='w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-3'>
-                <span className='text-white font-bold'>A</span>
-              </div>
-              <Link
-                href='/'
-                variant='ghost'
-                className='text-xl font-bold text-white hover:bg-transparent'>
-                AppliancePro
-              </Link>
+              <Image
+                src='/images/logo.png'
+                alt='JTE Repair Services Logo'
+                width={250}
+                height={150}
+                className='object-contain w-[120px] h-[96px]'
+              />
             </div>
             <p className='text-gray-300 mb-6'>
               Professional appliance repair services with 15+ years of
@@ -48,6 +48,13 @@ const Footer = () => {
           </div>
 
           {/* Services */}
+        </div>
+
+        {/* Google Maps Embed */}
+        <div className='w-full my-8 flex justify-center'>
+          <div className='w-full md:w-2/3 lg:w-1/2'>
+            <LeafletMapComponent />
+          </div>
         </div>
 
         {/* Bottom */}
