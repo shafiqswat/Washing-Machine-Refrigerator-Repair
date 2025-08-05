@@ -193,40 +193,37 @@ export const services = [
 export const testimonials = [
   {
     id: 1,
-    name: "Siti Aminah",
-    location: "Shah Alam, Selangor",
+    name: "Muhammad Danial",
+    location: "Unisel Shah Alam",
     rating: 5,
     text: "Excellent service! They fixed my Samsung washing machine in under an hour. The technician was very professional and explained everything in both English and Bahasa Malaysia.",
     appliance: "Washing Machine",
     date: "2 days ago",
-    avatar:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
+    avatar: "/images/testimonial1.jpg",
     brand: "Samsung",
     verified: true,
   },
   {
     id: 2,
-    name: "Ahmad Rahman",
-    location: "Kuala Lumpur",
+    name: "Khai Rizuan ",
+    location: " Kampung Bukit Tinggi, Pahang, Malaysia",
     rating: 5,
     text: "Emergency repair on a Sunday! They came within 2 hours and fixed my LG refrigerator. Saved all my food during the hot Malaysian weather. Highly recommend JTE!",
     appliance: "Refrigerator",
     date: "1 week ago",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+    avatar: "/images/testimonial2.jpg",
     brand: "LG",
     verified: true,
   },
   {
     id: 3,
-    name: "Priya Devi",
-    location: "Petaling Jaya, Selangor",
+    name: "Izz Rostam ",
+    location: "Melbourne, Victoria, Australia",
     rating: 5,
     text: "Very professional team from JTE. They diagnosed my Panasonic dryer issue over the phone and brought the right parts. Fixed same day with warranty!",
     appliance: "Dryer",
     date: "3 days ago",
-    avatar:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
+    avatar: "/images/testimonial3.jpg",
     brand: "Panasonic",
     verified: true,
   },
@@ -339,7 +336,7 @@ export const reasons = [
   },
   {
     icon: "🛡️",
-    title: "90-Day Warranty Coverage",
+    title: "1 Month Warranty Coverage",
     description:
       "All JTE repairs come with comprehensive 90-day warranty. We stand behind our work with genuine parts guarantee.",
     color: "from-green-500 to-emerald-500",
@@ -432,7 +429,7 @@ export const features = [
   },
   {
     icon: "🛡️",
-    title: "90-Day Warranty Guaranteed",
+    title: "1 Month Warranty Guaranteed",
     description:
       "Comprehensive 90-day warranty on all repairs with genuine parts",
     color: "green",

@@ -24,13 +24,12 @@ const TestimonialCard = ({ testimonial }) => {
         {/* Header with Avatar */}
         <div className='flex items-start justify-between mb-4'>
           <div className='flex items-center'>
-            <div className='relative mr-4'>
+            <div className='relative mr-4 w-12 h-12 flex-shrink-0'>
               <Image
                 src={testimonial.avatar}
                 alt={testimonial.name}
-                width={48}
-                height={48}
-                className='w-12 h-12 rounded-full object-cover border-2 border-white shadow-md'
+                fill
+                className='rounded-full object-cover border-2 border-white shadow-md'
               />
               <div className='absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white'></div>
             </div>
