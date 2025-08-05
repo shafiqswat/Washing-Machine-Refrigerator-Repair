@@ -16,11 +16,11 @@ const ContactSection = () => {
           </h2>
           <p className='text-xl text-gray-300 max-w-3xl mx-auto'>
             Ready to fix your appliances? Contact us for a free quote or
-            emergency service.<p>We&apos;re available 24/7.</p>
+            emergency service.We&apos;re available 24/7.
           </p>
         </div>
 
-        <div className='w-[90%] md:w-[70%] mx-auto'>
+        <div className='w-[100%] md:w-[70%] mx-auto'>
           {/* Contact Information */}
           <div className='space-y-8'>
             {/* Quick Contact */}
@@ -30,14 +30,16 @@ const ContactSection = () => {
                 {contactItems.map(({ id, title, value, Icon, bgColor }) => (
                   <div
                     key={id}
-                    className='flex items-center'>
+                    className='flex items-start sm:items-center flex-col sm:flex-row gap-3'>
                     <div
-                      className={`w-12 h-12 ${bgColor} rounded-lg flex items-center justify-center mr-4`}>
+                      className={`w-12 h-12 ${bgColor} rounded-lg flex items-center justify-center shrink-0`}>
                       <Icon className='w-6 h-6 text-white' />
                     </div>
-                    <div>
+                    <div className='text-left'>
                       <div className='font-semibold'>{title}</div>
-                      <div className='text-gray-300'>{value}</div>
+                      <div className='text-gray-300 break-words max-w-full'>
+                        {value}
+                      </div>
                     </div>
                   </div>
                 ))}
