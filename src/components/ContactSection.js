@@ -20,7 +20,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className='w-[70%] mx-auto'>
+        <div className='w-[90%] md:w-[70%] mx-auto'>
           {/* Contact Information */}
           <div className='space-y-8'>
             {/* Quick Contact */}
