@@ -29,8 +29,8 @@ const WhyChooseUs = () => {
           </h2>
           <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
             With over 15 years of experience and thousands of satisfied
-            customers, we're the most trusted appliance repair service in the
-            area.
+            customers, We&apos;re the most trusted appliance repair service in
+            the area.
           </p>
         </div>
 

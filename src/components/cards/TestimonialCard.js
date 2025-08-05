@@ -48,7 +48,7 @@ const TestimonialCard = ({ testimonial }) => {
         {/* Quote */}
         <blockquote className='text-gray-700 mb-4 italic leading-relaxed relative'>
           <span className='absolute -top-2 -left-2 text-4xl text-gray-200'>
-            "
+            &quot;
           </span>
           <span className='relative z-10'>{testimonial.text}</span>
         </blockquote>
