@@ -2,8 +2,8 @@
 
 import React from "react";
 import ServiceCard from "./cards/ServiceCard";
-import Link from "./form/Link";
 import { services } from "../assets/Dummy";
+import Link from "./form/Link";
 
 const ServicesSection = () => {
   return (
@@ -56,7 +56,7 @@ const ServicesSection = () => {
                   href='/contact'
                   variant='outline'
                   size='lg'
-                  className='text-white border-white hover:bg-white hover:text-blue-600'>
+                  className='text-white border-white'>
                   Schedule Online
                 </Link>
               </div>
