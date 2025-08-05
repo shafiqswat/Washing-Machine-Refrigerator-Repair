@@ -2,12 +2,13 @@
 
 import React from "react";
 import Link from "../components/form/Link";
+import GoogleMapCompact from "../components/GoogleMapCompact";
 
 const Footer = () => {
   return (
     <footer className='bg-gray-900 text-white'>
       <div className='container mx-auto px-4 py-12'>
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8'>
           {/* Company Info */}
           <div className='md:col-span-2'>
             <div className='flex items-center mb-4'>
@@ -25,7 +26,7 @@ const Footer = () => {
               Professional appliance repair services with 15+ years of
               experience. Fast, reliable, and guaranteed workmanship.
             </p>
-            <div className='flex space-x-4'>
+            <div className='flex space-x-4 mb-6'>
               <Link
                 href='#'
                 variant='secondary'
@@ -45,9 +46,49 @@ const Footer = () => {
                 Instagram
               </Link>
             </div>
+            
+            {/* Contact Info */}
+            <div className='space-y-2 text-gray-300 text-sm'>
+              <div className='flex items-center'>
+                <span className='w-4 h-4 bg-blue-600 rounded-full mr-2 flex items-center justify-center text-xs'>📞</span>
+                +60 11-2118 1615
+              </div>
+              <div className='flex items-center'>
+                <span className='w-4 h-4 bg-green-600 rounded-full mr-2 flex items-center justify-center text-xs'>🕒</span>
+                24/7 Emergency Service
+              </div>
+            </div>
           </div>
 
-          {/* Services */}
+          {/* Quick Links */}
+          <div>
+            <h4 className='text-white font-semibold mb-4'>Quick Links</h4>
+            <div className='space-y-2'>
+              <Link href='#service' variant='ghost' size='sm' className='block text-gray-300 hover:text-white'>
+                Our Services
+              </Link>
+              <Link href='#contact' variant='ghost' size='sm' className='block text-gray-300 hover:text-white'>
+                Contact Us
+              </Link>
+              <Link href='tel:+601121181615' variant='ghost' size='sm' className='block text-gray-300 hover:text-white'>
+                Emergency Call
+              </Link>
+              <Link href='#' variant='ghost' size='sm' className='block text-gray-300 hover:text-white'>
+                Get Quote
+              </Link>
+            </div>
+          </div>
+
+          {/* Service Area Map */}
+          <div>
+            <h4 className='text-white font-semibold mb-4'>Service Area</h4>
+            <div className='mb-4'>
+              <GoogleMapCompact height="h-32" />
+            </div>
+            <p className='text-gray-300 text-xs'>
+              We serve the entire region and surrounding areas with fast, reliable repair services.
+            </p>
+          </div>
         </div>
 
         {/* Bottom */}
