@@ -1,5 +1,7 @@
 /** @format */
 
+import { ClockIcon, LocationIcon, PhoneIcon } from "./Svg";
+
 export const services = [
   {
     id: 1,
@@ -169,11 +171,12 @@ export const stats = [
 ];
 
 export const contactInfo = {
-  phone: "(555) 123-4567",
-  emergency: "(555) 911-REPAIR",
+  phone: "+60 11-2118 1615",
+  emergency: "+60 11-2118 1615 -REPAIR",
   email: "info@appliancerepair.com",
-  address: "123 Repair Street, City, State 12345",
-  hours: "Mon-Sat: 8AM-8PM, 24/7 Emergency Service",
+  address:
+    "1, Jalan Mendaling, Bandar Kajang, 43000 Kajang, Selangor, Malaysia",
+  hours: "Mon-Sat: 10AM-10PM, 24/7 Emergency Service",
 };
 
 export const serviceAreas = [
@@ -261,5 +264,60 @@ export const features = [
     title: "Competitive Pricing",
     description: "Fair and transparent pricing",
     color: "purple",
+  },
+];
+
+export const contactItems = [
+  {
+    id: "phone",
+    title: "Phone",
+    value: contactInfo.phone,
+    Icon: PhoneIcon,
+    bgColor: "bg-blue-600",
+  },
+  {
+    id: "address",
+    title: "Address",
+    value: contactInfo.address,
+    Icon: LocationIcon,
+    bgColor: "bg-orange-600",
+  },
+  {
+    id: "hours",
+    title: "Hours",
+    value: contactInfo.hours,
+    Icon: ClockIcon,
+    bgColor: "bg-green-600",
+  },
+];
+
+export const ChooseStats = [
+  {
+    icon: "👨‍🔧",
+    value: "15+",
+    color: "text-blue-600",
+    bg: "bg-blue-100",
+    label: "Years Experience",
+  },
+  {
+    icon: "😊",
+    value: "10K+",
+    color: "text-green-600",
+    bg: "bg-green-100",
+    label: "Happy Customers",
+  },
+  {
+    icon: "🚨",
+    value: "24/7",
+    color: "text-purple-600",
+    bg: "bg-purple-100",
+    label: "Emergency Service",
+  },
+  {
+    icon: "⭐",
+    value: "100%",
+    color: "text-orange-600",
+    bg: "bg-orange-100",
+    label: "Satisfaction Rate",
   },
 ];
