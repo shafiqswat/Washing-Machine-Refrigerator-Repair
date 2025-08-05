@@ -27,7 +27,7 @@ const ContactPage = () => {
             </h1>
             <p className='text-xl text-gray-600 mb-8 max-w-2xl mx-auto'>
               Ready to fix your appliances? Contact us for a free quote or
-              emergency service. We're here to help 24/7!
+              emergency service. We&apos;re here to help 24/7!
             </p>
           </div>
         </div>
