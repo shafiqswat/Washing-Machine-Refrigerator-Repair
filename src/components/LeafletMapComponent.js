@@ -14,18 +14,19 @@ const mapCenter = [2.994085, 101.7811526];
 const LeafletMapComponent = () => {
   // Fix Leaflet marker icon for Next.js
   React.useEffect(() => {
-    delete L.Icon.Default.prototype._getIconUrl;
-    L.Icon.Default.mergeOptions({
-      iconRetinaUrl: markerIcon2x.src || markerIcon2x,
-      iconUrl: markerIcon.src || markerIcon,
-      shadowUrl: markerShadow.src || markerShadow,
-    });
+    if (typeof window !== "undefined") {
+      delete L.Icon.Default.prototype._getIconUrl;
+      L.Icon.Default.mergeOptions({
+        iconRetinaUrl: markerIcon2x.src || markerIcon2x,
+        iconUrl: markerIcon.src || markerIcon,
+        shadowUrl: markerShadow.src || markerShadow,
+      });
+    }
   }, []);
-  // Google Maps link for the location
+
   const googleMapsUrl =
     "https://www.google.com/maps/place/Javed+Tohedi+Enterprise/@2.994085,101.7811526,15z/data=!4m6!3m5!1s0x31cdcb9987b9911f:0x2b510ca57f2000e1!8m2!3d2.99281!4d101.786753!16s%2Fg%2F11t828m9q_?entry=ttu";
 
-  // Track drag state
   const isDraggingRef = React.useRef(false);
 
   const handleMapDragStart = () => {
@@ -35,11 +36,11 @@ const LeafletMapComponent = () => {
   const handleMapDragEnd = () => {
     setTimeout(() => {
       isDraggingRef.current = false;
-    }, 100); // short delay to avoid click after drag
+    }, 100);
   };
 
   const handleMapClick = (e) => {
-    if (!isDraggingRef.current) {
+    if (!isDraggingRef.current && typeof window !== "undefined") {
       window.open(googleMapsUrl, "_blank");
     }
   };

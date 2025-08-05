@@ -1,9 +1,22 @@
 /** @format */
-
+"use client";
 import React from "react";
 import Link from "../components/form/Link";
-import LeafletMapComponent from "../components/LeafletMapComponent";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+// Dynamically import LeafletMapComponent with no SSR
+const LeafletMapComponent = dynamic(
+  () => import("../components/LeafletMapComponent"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className='w-full h-[220px] bg-gray-200 rounded-xl animate-pulse flex items-center justify-center'>
+        Loading Map...
+      </div>
+    ),
+  }
+);
 
 const Footer = () => {
   return (
@@ -46,7 +59,6 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-
           {/* Services */}
         </div>
 
