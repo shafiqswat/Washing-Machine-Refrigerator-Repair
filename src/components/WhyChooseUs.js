@@ -1,6 +1,6 @@
 /** @format */
 
-import { reasons } from "@/assets/Dummy";
+import { ChooseStats, reasons } from "@/assets/Dummy";
 import React from "react";
 import Image from "next/image";
 
@@ -36,34 +36,20 @@ const WhyChooseUs = () => {
 
         {/* Stats with Images */}
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16'>
-          <div className='bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-shadow'>
-            <div className='w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4'>
-              <span className='text-2xl'>👨‍🔧</span>
+          {ChooseStats.map((stat, index) => (
+            <div
+              key={index}
+              className='bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-shadow'>
+              <div
+                className={`w-16 h-16 ${stat.bg} rounded-full flex items-center justify-center mx-auto mb-4`}>
+                <span className='text-2xl'>{stat.icon}</span>
+              </div>
+              <div className={`text-3xl font-bold ${stat.color} mb-2`}>
+                {stat.value}
+              </div>
+              <div className='text-gray-600 font-medium'>{stat.label}</div>
             </div>
-            <div className='text-3xl font-bold text-blue-600 mb-2'>15+</div>
-            <div className='text-gray-600 font-medium'>Years Experience</div>
-          </div>
-          <div className='bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-shadow'>
-            <div className='w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4'>
-              <span className='text-2xl'>😊</span>
-            </div>
-            <div className='text-3xl font-bold text-green-600 mb-2'>10K+</div>
-            <div className='text-gray-600 font-medium'>Happy Customers</div>
-          </div>
-          <div className='bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-shadow'>
-            <div className='w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4'>
-              <span className='text-2xl'>🚨</span>
-            </div>
-            <div className='text-3xl font-bold text-purple-600 mb-2'>24/7</div>
-            <div className='text-gray-600 font-medium'>Emergency Service</div>
-          </div>
-          <div className='bg-white rounded-2xl p-6 shadow-lg border border-gray-100 text-center hover:shadow-xl transition-shadow'>
-            <div className='w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4'>
-              <span className='text-2xl'>⭐</span>
-            </div>
-            <div className='text-3xl font-bold text-orange-600 mb-2'>100%</div>
-            <div className='text-gray-600 font-medium'>Satisfaction Rate</div>
-          </div>
+          ))}
         </div>
 
         {/* Main Content Grid */}
@@ -165,12 +151,11 @@ const WhyChooseUs = () => {
               appliance repairs.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
-              <button className='px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105'>
-                🚀 Get Free Quote
-              </button>
-              <button className='px-8 py-4 bg-gray-100 text-gray-700 font-semibold rounded-full hover:bg-gray-200 transition-colors'>
-                📞 Call (555) 123-4567
-              </button>
+              <a href='tel:+601121181615'>
+                <button className='px-8 py-4 bg-gray-100 text-gray-700 font-semibold rounded-full hover:bg-gray-200 transition-colors'>
+                  📞 Call +60 11-2118 1615
+                </button>
+              </a>
             </div>
           </div>
         </div>

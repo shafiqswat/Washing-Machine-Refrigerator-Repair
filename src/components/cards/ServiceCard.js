@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "../form/Link";
 import {
   WashingMachineIcon,
   RefrigeratorIcon,
@@ -98,13 +97,6 @@ const ServiceCard = ({ service }) => {
             </div>
             <span className='text-sm text-gray-500'>4.9/5</span>
           </div>
-
-          <Link
-            variant='primary'
-            size='sm'
-            className='px-6 py-2 rounded-full text-sm font-semibold'>
-            Get Quote
-          </Link>
         </div>
       </div>
 

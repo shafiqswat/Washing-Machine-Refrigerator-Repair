@@ -21,8 +21,8 @@ const TestimonialsSection = () => {
             </span>
           </h2>
           <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
-            Don&apos;t just take our word for it. Here&apos;s what our satisfied customers
-            have to say about our appliance repair services.
+            Don&apos;t just take our word for it. Here&apos;s what our satisfied
+            customers have to say about our appliance repair services.
           </p>
         </div>
 
@@ -56,12 +56,11 @@ const TestimonialsSection = () => {
               about.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
-              <button className='px-8 py-4 bg-white text-green-600 font-semibold rounded-full hover:bg-gray-100 transition-colors'>
-                🚀 Get Free Quote
-              </button>
-              <button className='px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-full hover:bg-white/30 transition-colors border border-white/30'>
-                📞 Call Now: (555) 123-4567
-              </button>
+              <a href='tel:+601121181615'>
+                <button className='px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-full hover:bg-white/30 transition-colors border border-white/30'>
+                  📞 Call Now: +60 11-2118 1615
+                </button>
+              </a>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "./form/Link";
 import FeatureCard from "./cards/FeatureCard";
-import { WashingMachineIcon, RefrigeratorIcon } from "../assets/Svg";
+import { WashingMachineIcon } from "../assets/Svg";
 import { features } from "@/assets/Dummy";
 
 const HeroSection = () => {
@@ -44,15 +44,11 @@ const HeroSection = () => {
             {/* CTA Buttons */}
             <div className='flex flex-col sm:flex-row gap-4 mb-12'>
               <Link
-                size='lg'
-                className='px-8 py-4'>
-                Get Free Quote
-              </Link>
-              <Link
+                href='tel:+60 11-2118 1615'
                 variant='outline'
                 size='lg'
                 className='px-8 py-4'>
-                Call Now: (555) 123-4567
+                +60 11-2118 1615
               </Link>
             </div>
 

@@ -7,7 +7,9 @@ import Link from "./form/Link";
 
 const ServicesSection = () => {
   return (
-    <section className='py-20 bg-gray-50'>
+    <section
+      className='py-20 bg-gray-50'
+      id='service'>
       <div className='container mx-auto px-4'>
         {/* Section Header */}
         <div className='text-center mb-16'>
@@ -47,17 +49,10 @@ const ServicesSection = () => {
               </p>
               <div className='flex flex-col sm:flex-row gap-4 justify-center'>
                 <Link
-                  href='tel:5551234567'
+                  href='tel:+60 11-2118 1615'
                   variant='secondary'
                   size='lg'>
-                  Call Now: (555) 123-4567
-                </Link>
-                <Link
-                  href='/contact'
-                  variant='outline'
-                  size='lg'
-                  className='text-white border-white'>
-                  Schedule Online
+                  Call Now: +60 11-2118 1615
                 </Link>
               </div>
             </div>
