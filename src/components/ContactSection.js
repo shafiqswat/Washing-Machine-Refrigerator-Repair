@@ -23,7 +23,7 @@ const ContactSection = () => {
           </h2>
           <p className='text-xl text-gray-300 max-w-3xl mx-auto'>
             Ready to fix your appliances? Contact us for a free quote or
-            emergency service. We're here to help 24/7!
+            emergency service. We&apos;re here to help 24/7!
           </p>
         </div>
 

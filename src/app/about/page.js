@@ -42,7 +42,7 @@ const AboutPage = () => {
                 repair services.
               </p>
               <p className='text-lg text-gray-600 mb-8'>
-                Today, we're proud to be the most trusted appliance repair
+                Today, we&apos;re proud to be the most trusted appliance repair
                 company in the region, with thousands of satisfied customers and
                 a team of certified technicians.
               </p>
